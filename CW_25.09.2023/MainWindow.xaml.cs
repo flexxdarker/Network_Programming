@@ -38,15 +38,6 @@ namespace CW_25._09._2023
             IPAddress iPAddress = IPAddress.Parse(adress);
             IPEndPoint getPoint = new IPEndPoint(iPAddress, port);
             Socket listenSocket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
-            List<string> Hellolist = new List<string>();
-            Hellolist.Add("hello");
-            Hellolist.Add("Hi");
-            Hellolist.Add("Good Afternon");
-            List<string> hayList = new List<string>();
-            hayList.Add("I'm fine");
-            hayList.Add("I'm ok");
-            hayList.Add("Nothing special");
-            string bye = "bye";
             Random rnd = new Random();
             try
             {
