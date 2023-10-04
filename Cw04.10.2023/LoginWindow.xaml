@@ -1,0 +1,33 @@
+﻿<Window x:Class="Cw04._10._2023.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cw04._10._2023"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="100" Width="300">
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Email: " />
+            <TextBox x:Name="emailTb" Grid.Column="1" Background="LightGray" Margin="2"/>
+            <Label Content="Password: " Grid.Row="1"/>
+            <TextBox x:Name="passwordTb" Grid.Row="1" Grid.Column="1" Background="LightGray" Margin="2"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="loginBtn" Content="Login" Click="loginBtn_Click" Margin="2"/>
+            <Button x:Name="quitBtn" Content="Quit" Click="quitBtn_Click" Margin="2" Grid.Column="1"/>
+        </Grid>
+    </StackPanel>
+</Window>

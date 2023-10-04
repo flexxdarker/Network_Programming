@@ -23,8 +23,6 @@ namespace Cw_27._09._2023._2
                     NetworkStream ns = client.GetStream();
                     StreamWriter sw= new StreamWriter(ns);
                     sw.WriteLine(VIN);
-
-                    //JsonSerializer.Serialize(ns, VIN);
                     sw.Flush();
 
                     StreamReader sr = new StreamReader(ns); 

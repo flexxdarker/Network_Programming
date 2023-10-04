@@ -1,0 +1,44 @@
+﻿<Window x:Class="Cw04._10._2023.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cw04._10._2023"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400">
+    <DockPanel LastChildFill="False">
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Content="To: "/>
+            <TextBox x:Name="mailTb" Grid.Column="1" Background="LightGray" Margin="2"/>
+            <Label Content="Subject: " Grid.Row="1"/>
+            <TextBox x:Name="subjectTb" Grid.Column="1" Grid.Row ="1" Background="LightGray" Margin="2"/>
+        </Grid>
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="addFileBtn" Content="Add file" Click="addFileBtn_Click" Margin="2"/>
+            <Label Content="Text" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/> 
+        </Grid>
+        <TextBox x:Name="messegesTb" DockPanel.Dock="Top" Height="150" Margin="2"/>
+        <Label DockPanel.Dock="Top" Content="Files" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
+        <ListBox DockPanel.Dock="Top" Height="125" Margin="2" x:Name="fileLb"/>
+        <Grid DockPanel.Dock="Bottom" Margin="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="loginBtn" Content="Login" Click="changeBtn_Click" Margin="2"/>
+            <Button x:Name="sendBtn" Content="Send" Click="sendBtn_Click" Grid.Column="1" Margin="2"/>
+        </Grid>
+    </DockPanel>
+</Window>

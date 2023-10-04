@@ -28,7 +28,7 @@ namespace Cw_27._09._2023
                 {
                     while(client.Connected)
                     {
-                        Console.WriteLine("Got 1");
+                        //Console.WriteLine("Got 1");
                         NetworkStream ns = client.GetStream();
                         //JsonSerializer.Serialize(ns, cars);
                         //string VIN = (string)JsonSerializer.Deserialize(ns, typeof(string));
@@ -36,7 +36,7 @@ namespace Cw_27._09._2023
                         string VIN = sr.ReadLine();
 
                         string result = "";
-                        Console.WriteLine("Got 2");
+                        //Console.WriteLine("Got 2");
                         foreach (var item in cars)
                         {
                             if(VIN == item.VIN)
