@@ -6,7 +6,52 @@
         xmlns:local="clr-namespace:Cw06._10._2023"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+    <Grid Background="FloralWhite">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <DockPanel>
+            <TextBlock DockPanel.Dock="Top" TextAlignment="Center" Padding="4" FontWeight="Bold">Folders</TextBlock>
+            <ListBox Margin="4" x:Name="folderList"></ListBox>
+        </DockPanel>
+        <DockPanel Grid.Column="1">
+            <TextBlock DockPanel.Dock="Top" TextAlignment="Center" Padding="4" FontWeight="Bold">Messages</TextBlock>
+            <ListBox Margin="4" x:Name="messageList"></ListBox>
+        </DockPanel>
+        <DockPanel Grid.Column="2">
+            <TextBlock DockPanel.Dock="Top" TextAlignment="Center" Padding="4" FontWeight="Bold">Content</TextBlock>
+            <Label x:Name="contentLab" Background="White" BorderBrush="Black" BorderThickness="1" Margin="4"/>
+        </DockPanel>
+        <DockPanel Grid.Column="3" Margin="2">
+            <Grid DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Content="To: "/>
+                <TextBox x:Name="toTb" Grid.Column="1" Background="LightGray" Margin="2"/>
+                <Label Content="Subject: " Grid.Column="0" Grid.Row="1"/>
+                <TextBox x:Name="subjectTb" Grid.Row="1" Grid.Column="1" Background="LightGray" Margin="2"/>
+            </Grid>
+            <Grid DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="addFileBtn" Content="Add" Click="addFileBtn_Click" Background="LightGray" Margin="2"/>
+                <Button x:Name="sendBtn" Content="Send" Click="sendBtn_Click" Background="LightGray" Margin="2" Grid.Column ="1"/>
+            </Grid>
+            <Label Content="Files" HorizontalAlignment="Center" DockPanel.Dock="Top" VerticalAlignment="Center"/>
+            <ListBox x:Name="filesLb" DockPanel.Dock="Top"/>
+            <Label Content="Text" HorizontalAlignment="Center" DockPanel.Dock="Top"/>
+            <TextBox x:Name="textTb" DockPanel.Dock="Top"/>
+        </DockPanel>
     </Grid>
 </Window>
