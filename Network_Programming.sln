@@ -15,7 +15,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cw_29.09.2023.2", "Cw_29.09
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cw_02.10.2023", "Cw_02.10.2023\Cw_02.10.2023.csproj", "{7FE62A07-B82D-4168-82CC-3810E63FD2DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cw04.10.2023", "Cw04.10.2023\Cw04.10.2023.csproj", "{92AFAAEA-E374-47B8-8E9C-E24DBC563A34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cw04.10.2023", "Cw04.10.2023\Cw04.10.2023.csproj", "{92AFAAEA-E374-47B8-8E9C-E24DBC563A34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C3CFB7B5-C0F4-43E2-BA2D-6EEB82102E72}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile1.txt = TextFile1.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cw06.10.2023", "Cw06.10.2023\Cw06.10.2023.csproj", "{89DFEF7F-5503-48FA-8657-9AEFDAF4C090}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +58,10 @@ Global
 		{92AFAAEA-E374-47B8-8E9C-E24DBC563A34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92AFAAEA-E374-47B8-8E9C-E24DBC563A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92AFAAEA-E374-47B8-8E9C-E24DBC563A34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89DFEF7F-5503-48FA-8657-9AEFDAF4C090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89DFEF7F-5503-48FA-8657-9AEFDAF4C090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89DFEF7F-5503-48FA-8657-9AEFDAF4C090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89DFEF7F-5503-48FA-8657-9AEFDAF4C090}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

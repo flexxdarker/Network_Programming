@@ -63,6 +63,7 @@ namespace Cw04._10._2023
                     mail.Attachments.Add(new Attachment(item));
                 }    
             }
+            
 
             // send mail message
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587)
