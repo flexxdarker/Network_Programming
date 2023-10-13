@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CW_25._09._2023.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -22,7 +23,7 @@ namespace CW_25._09._2023
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+        GovorunDbContext dbContext = new GovorunDbContext();
         public MainWindow()
         {
             InitializeComponent();
@@ -42,7 +43,7 @@ namespace CW_25._09._2023
             try
             {
                 string message = "";
-                while(message != "goodbye")
+                while (message != "goodbye")
                 {
                     dialogList.Items.Add(message);
                     message = messageTb.Text;
@@ -53,10 +54,6 @@ namespace CW_25._09._2023
                     byte[] dataa = new byte[1024];
                     bytes = listenSocket.ReceiveFrom(dataa, ref remoteEndPoint);
                     string msg = Encoding.Unicode.GetString(dataa, 0, bytes);
-                    if(msg == "Hello")
-                    {
-
-                    }
                 }
             }
             catch(Exception ex)

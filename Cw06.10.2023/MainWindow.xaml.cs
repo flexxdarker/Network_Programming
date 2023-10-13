@@ -38,10 +38,10 @@ namespace Cw06._10._2023
             }
             if(folderList.SelectedIndex < 0)
             {
-                foreach(var fl in client.GetFolder(client.PersonalNamespaces[0])[folderList.SelectedIndex])
-                {
-                     messageList.Items.Add(fl.TextBody);
-                }
+                //foreach(var fl in client.GetFolder(client.PersonalNamespaces[0])[folderList.SelectedIndex])
+                //{
+                //     messageList.Items.Add(fl.TextBody);
+                //}
             }
 
         }

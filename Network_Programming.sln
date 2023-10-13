@@ -22,7 +22,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TextFile1.txt = TextFile1.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cw06.10.2023", "Cw06.10.2023\Cw06.10.2023.csproj", "{89DFEF7F-5503-48FA-8657-9AEFDAF4C090}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cw06.10.2023", "Cw06.10.2023\Cw06.10.2023.csproj", "{89DFEF7F-5503-48FA-8657-9AEFDAF4C090}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbTo25.09.2023", "DbTo25.09.2023\DbTo25.09.2023.csproj", "{70FB3C20-B8F8-4EB6-8739-921681BAE79D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "serverTo25.09.2023", "serverTo25.09.2023\serverTo25.09.2023.csproj", "{1FF217B7-CDF8-4E78-9AD6-D0DD319DA929}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +66,14 @@ Global
 		{89DFEF7F-5503-48FA-8657-9AEFDAF4C090}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89DFEF7F-5503-48FA-8657-9AEFDAF4C090}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89DFEF7F-5503-48FA-8657-9AEFDAF4C090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70FB3C20-B8F8-4EB6-8739-921681BAE79D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70FB3C20-B8F8-4EB6-8739-921681BAE79D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70FB3C20-B8F8-4EB6-8739-921681BAE79D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70FB3C20-B8F8-4EB6-8739-921681BAE79D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FF217B7-CDF8-4E78-9AD6-D0DD319DA929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF217B7-CDF8-4E78-9AD6-D0DD319DA929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF217B7-CDF8-4E78-9AD6-D0DD319DA929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF217B7-CDF8-4E78-9AD6-D0DD319DA929}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
