@@ -26,20 +26,32 @@ namespace serverTo25._09._2023
                     byte[] data = listener.Receive(ref remoteEndPoint);
                     string msg = Encoding.Unicode.GetString(data);
                     Console.WriteLine($"{DateTime.Now.ToShortTimeString()}: {msg} from {remoteEndPoint}");
-                    string message = "Message was send!";
+                    string message = "";
                     Random rnd = new Random();
                     if (msg == "Hello")
                     {
                         //dbContext.Greets.Select(x => x.Id == rnd.Next(1, 3));
-                        Greeting gr = dbContext.Greets.Select(x => x.Id == rnd.Next(1,3));
+                        Greeting gr = dbContext.Greets.First(x=> x.Id == rnd.Next(1,3));
+                        message = gr.Answer;
+                        data = Encoding.Unicode.GetBytes(message);
                     }
                     else if (msg == "How are you")
                     {
-                        //dbContext.FellAnswers.Select(x => x.Id == rnd.Next(1, 3)));
+                        AnswerFelling ad = dbContext.FellAnswers.First(x => x.Id == rnd.Next(1, 4));
+                        message = ad.Answers;
+                        data = Encoding.Unicode.GetBytes(message);
                     }
                     else if (msg == "What the weather is")
                     {
-                        dialogList.Items.Add(dbContext.WeatherAnswers.Select(x => x.Id == rnd.Next(1, 4)));
+                        WeatherAnswer wa = dbContext.WeatherAnswers.First(x => x.Id == rnd.Next(1, 4));
+                        message = wa.Answer;
+                        data = Encoding.Unicode.GetBytes(message);
+                    }
+                    else if(msg == "Goodbye")
+                    {
+                        Farewell fw = dbContext.Farewells.First(x=>x.Id == rnd.Next(1, 3));
+                        message = fw.Farewells;
+                        data = Encoding.Unicode.GetBytes(message);
                     }
                     listener.Send(data, data.Length, remoteEndPoint);
                 }

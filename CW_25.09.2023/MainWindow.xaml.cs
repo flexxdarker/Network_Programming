@@ -54,6 +54,7 @@ namespace CW_25._09._2023
                     byte[] dataa = new byte[1024];
                     bytes = listenSocket.ReceiveFrom(dataa, ref remoteEndPoint);
                     string msg = Encoding.Unicode.GetString(dataa, 0, bytes);
+                    dialogList.Items.Add(msg);
                 }
             }
             catch(Exception ex)
